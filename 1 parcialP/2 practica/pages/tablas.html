@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>¿Qué es una tabla en html?</h1>
+        <p>Las tablas son un recurso muy útil para organizar 
+            datos tabulados y definir la disposición del texto e imágenes <br>
+             dentro de una página HTML. Están formadas por una o más filas, 
+             y cada fila se divide en una o varias celdas. <br><br>
+
+             Una tabla facilita la localización rápida y sencilla de valores relacionados 
+             entre distintos tipos de información. <br> Por ejemplo, puede mostrar la relación 
+             entre una persona y su edad, o entre los días de la semana y el horario <br>
+            de una piscina municipal.
+        </p>
+        <img src="https://developer.mozilla.org/es/docs/Learn_web_development/Core/Structuring_content/HTML_table_basics/numbers-table.png" width="400px">
+
+        <h1>¿Como se programa en html una tabla?</h1>
+        <p>para comenzar debemos seguir los siguientes pasos:</p>
+        <ul>
+            <li><p>El contenido de una tabla se encierra entre las etiquetas < table > y < / tabla >, <br>
+                estas deben colocarse dentro de la sección <body> de tu código HTML.
+            </p></li>
+
+            <li><p>La unidad más pequeña dentro de una tabla es la celda, la cual se define mediante la <br>
+                etiqueta < td >, que proviene de "table data" (dato de tabla). Debes colocar estas etiquetas <br>
+                dentro de las etiquetas < table > para agregar contenido a tu tabla.
+            </p>
+            </li>
+
+            <p> < table ><br>   
+                    < th > Nombre < / th > <br>
+                    < th > Apeillo < / th > <br>
+                    < th > Edad < / th > <br>
+                < / table >
+            </p>
+        </ul>
+
+        <h1>¿Qué significan las etiquetas &lt;tr&gt; y &lt;th&gt;?</h1>
+        <ul>
+            <li><p>La etiqueta < tr > se utiliza para definir una fila dentro de una tabla. <br>
+                Cada fila puede contener una o más celdas, ya sean de encabezado o de datos.</p></li>
+
+            <li><p>La etiqueta < th > se usa para crear una celda de encabezado en una tabla. <br>
+                Estas celdas normalmente se muestran en negrita y centradas de forma predeterminada. <br>
+                Sirven para describir el contenido de las columnas o filas.</p></li>
+
+            <p>
+                < table > <br>
+                    < tr > <br>
+                        < th > Nombre < /th > <br>
+                        < th > Apellido < /th > <br>
+                        < th > Edad < /th > <br>
+                    < /tr > <br>
+                    < tr > <br>
+                        < td > Laura < /td > <br>
+                        < td > Gómez < /td > <br>
+                        < td > 30 < /td > <br>
+                    < /tr > <br>
+                < /table >
+            </p>
+        </ul>
+        <h1> Ejemplo de uso</h1>
+    </header>
+    <main>
+    <table>
+        <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+        </tr>
+        <tr>
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>25</td>
+        </tr>
+        <tr>
+            <td>sofia</td>
+            <td>Alarcon</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>Pedro </td>
+            <td>Alava</td>
+            <td>25</td>
+        </tr>
+    </table>
+    </main>
+    <p>finalizamos esta pagina que detalla, como hacer tablas en html.<br><br>
+        <img src="https://www.udacity.com/blog/wp-content/uploads/2020/06/HTML_Blog-scaled.jpeg" width="500px"> <br><br>
+        enlaces para retornar a la pagina principal o continuar con el siguiente curso.
+    </p>
+    <h1></h1>
+
+    <ul>
+        <li> <a href="../index.html">Retornar a la pagina principal</a></li>
+        <li> <a href="./formulario.html">Como hacer formularios en html</a></li>
+    </ul>
+
+    <h1>Mas informacion</h1>
+    <aside>
+        <a href="https://developer.mozilla.org/es/docs/Learn_web_development/Core/Structuring_content/HTML_table_basics">conocer más acerca de tablas en html</a>
+    </aside>
+</body>
+</html>
