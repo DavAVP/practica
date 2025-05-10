@@ -15,4 +15,3 @@ Contiene un curso básico de HTML con secciones interactivas como formularios, t
 
 - HTML5
 - Tailwind CSS
-- Chart.js
