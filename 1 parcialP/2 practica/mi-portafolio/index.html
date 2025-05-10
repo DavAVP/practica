@@ -3,78 +3,105 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BurgerBrand - Dashboard</title>
-    <link rel="stylesheet" href="/src/style.css" />
+    <title>CodeStart HTML - Curso Interactivo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <div class="grid grid-rows-[auto_1fr_auto] min-h-screen">
-      <!-- Header -->
-      <header class="bg-primary-color text-white flex justify-between items-center p-4">
-        <h1 class="text-3xl">🍔 BurgerBrand</h1>
-        <img src="/logo.png" alt="Logo" class="h-12" />
-      </header>
-
-      <!-- Main Content with Sidebar -->
-      <div class="grid grid-cols-[250px_1fr]">
-        <!-- Sidebar -->
-        <nav class="bg-secondary-color text-white p-6 space-y-4">
-          <ul class="space-y-3">
-            <li><a href="#dashboard" class="hover:text-yellow-500">Dashboard</a></li>
-            <li><a href="#menu" class="hover:text-yellow-500">Menú</a></li>
-            <li><a href="#promos" class="hover:text-yellow-500">Promociones</a></li>
-            <li><a href="#contacto" class="hover:text-yellow-500">Contacto</a></li>
-          </ul>
-        </nav>
-
-        <!-- Main -->
-        <main class="p-6 grid grid-cols-1 md:grid-cols-3 gap-6 bg-white">
-          <!-- Section 1 -->
-          <section class="bg-green-100 rounded-lg shadow-lg p-6">
-            <h2 class="text-2xl font-semibold mb-4">Hamburguesas Populares</h2>
-            <article class="mb-4">
-              <h3 class="text-xl text-primary-color">Doble Queso</h3>
-              <p>Carne de res, doble queso cheddar, pan artesanal.</p>
-            </article>
-            <article>
-              <h3 class="text-xl text-primary-color">Veggie Deluxe</h3>
-              <p>Hamburguesa vegetal con aguacate y tomate.</p>
-            </article>
-          </section>
-
-          <!-- Section 2 -->
-          <section class="bg-yellow-100 rounded-lg shadow-lg p-6">
-            <h2 class="text-2xl font-semibold mb-4">Estadísticas de Ventas</h2>
-            <p>Total de ventas hoy: <strong>154</strong></p>
-            <p>Producto más vendido: <strong class="text-primary-color">Doble Queso</strong></p>
-          </section>
-
-          <!-- Section 3 -->
-          <section class="bg-secondary-color text-white rounded-lg shadow-lg p-6" id="contacto">
-            <h2 class="text-2xl font-semibold mb-4">Formulario de Contacto</h2>
-            <form class="space-y-4">
-              <div>
-                <label for="nombre" class="block">Nombre</label>
-                <input type="text" id="nombre" />
-              </div>
-              <div>
-                <label for="email" class="block">Email</label>
-                <input type="email" id="email" />
-              </div>
-              <div>
-                <label for="mensaje" class="block">Mensaje</label>
-                <textarea id="mensaje" rows="3"></textarea>
-              </div>
-              <button type="submit">Enviar</button>
-            </form>
-          </section>
-        </main>
+  <body class="bg-gray-100 text-gray-800 font-sans">
+    <header class="bg-indigo-600 text-white p-6">
+      <div class="max-w-5xl mx-auto">
+        <h1 class="text-3xl font-bold mb-2">🚀 CodeStart HTML</h1>
+        <p class="text-lg">Aprende HTML desde cero de forma clara, divertida y organizada.</p>
       </div>
+    </header>
 
-      <!-- Footer -->
-      <footer class="bg-primary-color text-white text-center p-6">
-        <p>© 2025 BurgerBrand. Todos los derechos reservados.</p>
-        <address class="not-italic text-sm">Contacto: burger@brand.com</address>
-      </footer>
-    </div>
+    <main class="max-w-5xl mx-auto px-6 py-10 space-y-12">
+      <!-- Introducción -->
+      <section>
+        <h2 class="text-2xl font-semibold mb-4">Bienvenido al curso</h2>
+        <p class="mb-4">
+          En este curso aprenderás a usar HTML desde cero. A lo largo del contenido aprenderás a:
+        </p>
+        
+        <!-- Lista mejorada -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow">
+            <div class="text-blue-500 text-2xl">✍️</div>
+            <div>
+              <h3 class="font-bold text-lg">Formularios</h3>
+              <p class="text-sm text-gray-600">Crea formularios claros y funcionales.</p>
+            </div>
+          </div>
+          <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow">
+            <div class="text-green-500 text-2xl">📋</div>
+            <div>
+              <h3 class="font-bold text-lg">Listas</h3>
+              <p class="text-sm text-gray-600">Usa listas ordenadas y desordenadas con estilo.</p>
+            </div>
+          </div>
+          <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow">
+            <div class="text-pink-500 text-2xl">🖼️</div>
+            <div>
+              <h3 class="font-bold text-lg">Imágenes</h3>
+              <p class="text-sm text-gray-600">Agrega imágenes correctamente en tus páginas.</p>
+            </div>
+          </div>
+          <div class="flex items-start space-x-4 p-4 bg-white rounded-lg shadow">
+            <div class="text-yellow-500 text-2xl">🎥</div>
+            <div>
+              <h3 class="font-bold text-lg">Videos</h3>
+              <p class="text-sm text-gray-600">Incorpora contenido en video de forma efectiva.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Imagen destacada -->
+      <section class="text-center">
+        <img src="https://blog.walthercuro.com/wp-content/uploads/2024/10/maquetacion-email-html.png" alt="Curso HTML" class="mx-auto rounded-lg shadow-lg w-full max-w-md" />
+      </section>
+
+      <!-- Navegación a secciones -->
+      <section class="space-y-4">
+        <h2 class="text-xl font-semibold">Secciones del Curso</h2>
+        <ul class="space-y-2">
+          <li><a href="./pages/tablas.html" class="text-indigo-600 hover:underline">🗂️ Cómo desarrollar tablas</a></li>
+          <li><a href="./pages/formulario.html" class="text-indigo-600 hover:underline">📨 Formularios</a></li>
+          <li><a href="./pages/listas.html" class="text-indigo-600 hover:underline">📝 Listas ordenadas y desordenadas</a></li>
+          <li><a href="./pages/imagenes.html" class="text-indigo-600 hover:underline">🖼️ Insertar imágenes</a></li>
+          <li><a href="./pages/videos.html" class="text-indigo-600 hover:underline">🎥 Colocar videos</a></li>
+          <li><a href="./pages/contactame.html" class="text-indigo-600 hover:underline">📧 Contáctame</a></li>
+        </ul>
+      </section>
+
+      <!-- Dashboard -->
+      <section class="mt-16">
+        <h2 class="text-2xl font-bold mb-6">📊 Dashboard de Progreso</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Sección 1 -->
+          <div class="bg-white rounded-lg p-6 shadow">
+            <h3 class="text-lg font-semibold mb-2">Temas Completados</h3>
+            <p class="text-green-600 font-bold text-xl">4 / 6</p>
+          </div>
+
+          <!-- Sección 2 -->
+          <div class="bg-white rounded-lg p-6 shadow">
+            <h3 class="text-lg font-semibold mb-2">Tiempo Estimado Restante</h3>
+            <p class="text-yellow-600 font-bold text-xl">15 minutos</p>
+          </div>
+
+          <!-- Sección 3 -->
+          <div class="bg-white rounded-lg p-6 shadow">
+            <h3 class="text-lg font-semibold mb-2">Nivel Actual</h3>
+            <p class="text-blue-600 font-bold text-xl">Básico</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-indigo-700 text-white text-center p-6 mt-12">
+      <p>© 2025 CodeStart HTML. Todos los derechos reservados.</p>
+      <p class="text-sm">Diseñado para estudiantes que desean aprender de forma práctica.</p>
+    </footer>
   </body>
 </html>
