@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BurgerBrand - Dashboard</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div class="grid grid-rows-[auto_1fr_auto] min-h-screen">
+      <!-- Header -->
+      <header class="bg-primary-color text-white flex justify-between items-center p-4">
+        <h1 class="text-3xl">🍔 BurgerBrand</h1>
+        <img src="/logo.png" alt="Logo" class="h-12" />
+      </header>
+
+      <!-- Main Content with Sidebar -->
+      <div class="grid grid-cols-[250px_1fr]">
+        <!-- Sidebar -->
+        <nav class="bg-secondary-color text-white p-6 space-y-4">
+          <ul class="space-y-3">
+            <li><a href="#dashboard" class="hover:text-yellow-500">Dashboard</a></li>
+            <li><a href="#menu" class="hover:text-yellow-500">Menú</a></li>
+            <li><a href="#promos" class="hover:text-yellow-500">Promociones</a></li>
+            <li><a href="#contacto" class="hover:text-yellow-500">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <!-- Main -->
+        <main class="p-6 grid grid-cols-1 md:grid-cols-3 gap-6 bg-white">
+          <!-- Section 1 -->
+          <section class="bg-green-100 rounded-lg shadow-lg p-6">
+            <h2 class="text-2xl font-semibold mb-4">Hamburguesas Populares</h2>
+            <article class="mb-4">
+              <h3 class="text-xl text-primary-color">Doble Queso</h3>
+              <p>Carne de res, doble queso cheddar, pan artesanal.</p>
+            </article>
+            <article>
+              <h3 class="text-xl text-primary-color">Veggie Deluxe</h3>
+              <p>Hamburguesa vegetal con aguacate y tomate.</p>
+            </article>
+          </section>
+
+          <!-- Section 2 -->
+          <section class="bg-yellow-100 rounded-lg shadow-lg p-6">
+            <h2 class="text-2xl font-semibold mb-4">Estadísticas de Ventas</h2>
+            <p>Total de ventas hoy: <strong>154</strong></p>
+            <p>Producto más vendido: <strong class="text-primary-color">Doble Queso</strong></p>
+          </section>
+
+          <!-- Section 3 -->
+          <section class="bg-secondary-color text-white rounded-lg shadow-lg p-6" id="contacto">
+            <h2 class="text-2xl font-semibold mb-4">Formulario de Contacto</h2>
+            <form class="space-y-4">
+              <div>
+                <label for="nombre" class="block">Nombre</label>
+                <input type="text" id="nombre" />
+              </div>
+              <div>
+                <label for="email" class="block">Email</label>
+                <input type="email" id="email" />
+              </div>
+              <div>
+                <label for="mensaje" class="block">Mensaje</label>
+                <textarea id="mensaje" rows="3"></textarea>
+              </div>
+              <button type="submit">Enviar</button>
+            </form>
+          </section>
+        </main>
+      </div>
+
+      <!-- Footer -->
+      <footer class="bg-primary-color text-white text-center p-6">
+        <p>© 2025 BurgerBrand. Todos los derechos reservados.</p>
+        <address class="not-italic text-sm">Contacto: burger@brand.com</address>
+      </footer>
+    </div>
+  </body>
+</html>
