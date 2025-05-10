@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tablas en HTML - CodeStart</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.4/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-blue-50 to-white p-8">
+
+  <!-- Header -->
+  <header class="text-center mb-8">
+    <h1 class="text-4xl font-bold text-blue-600 mb-2">📊 Tablas en HTML</h1>
+    <p class="text-lg text-gray-700">Las tablas son una estructura muy útil en HTML para organizar y presentar datos en filas y columnas. Aprende a crear y mejorar tablas en tus proyectos web.</p>
+  </header>
+
+  <!-- Sección de introducción -->
+  <section class="mb-8 bg-white p-6 rounded-lg shadow-lg">
+    <h2 class="text-2xl font-semibold text-blue-600 mb-4">¿Qué son las tablas en HTML?</h2>
+    <p class="text-gray-800">Las tablas permiten mostrar datos en filas y columnas. Son esenciales para representar información de manera organizada, como listas de precios, horarios, inventarios, etc.</p>
+    <p class="text-gray-800 mt-4">Las tablas están formadas por varias etiquetas clave:</p>
+    <ul class="list-disc pl-6 text-gray-700 mt-2">
+      <li><strong>&lt;table&gt;</strong>: Define el contenedor de la tabla.</li>
+      <li><strong>&lt;tr&gt;</strong>: Define una fila dentro de la tabla.</li>
+      <li><strong>&lt;th&gt;</strong>: Define las celdas de encabezado (generalmente en negrita y centradas).</li>
+      <li><strong>&lt;td&gt;</strong>: Define las celdas de datos dentro de una fila.</li>
+      <li><strong>&lt;thead&gt;</strong>: Define el encabezado de la tabla.</li>
+      <li><strong>&lt;tbody&gt;</strong>: Define el cuerpo de la tabla donde van los datos.</li>
+    </ul>
+  </section>
+
+  <!-- Sección de sintaxis -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-semibold text-blue-600 mb-4">Sintaxis básica de una tabla:</h2>
+    <p class="text-gray-800 mb-4">Para crear una tabla básica en HTML, utilizamos las etiquetas anteriores. Aquí tienes un ejemplo básico:</p>
+    <pre class="bg-gray-100 p-4 rounded-lg shadow-md text-sm text-gray-700">
+<code>
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Nombre&lt;/th&gt;
+      &lt;th&gt;Edad&lt;/th&gt;
+      &lt;th&gt;Ciudad&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ana&lt;/td&gt;
+      &lt;td&gt;28&lt;/td&gt;
+      &lt;td&gt;Lima&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Luis&lt;/td&gt;
+      &lt;td&gt;34&lt;/td&gt;
+      &lt;td&gt;Bogotá&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code>
+    </pre>
+  </section>
+
+  <!-- Ejemplo de tabla con datos -->
+  <section class="mb-8 bg-white p-6 rounded-lg shadow-lg">
+    <h2 class="text-2xl font-semibold text-blue-600 mb-4">Ejemplo de tabla con datos:</h2>
+    <p class="text-gray-800 mb-4">Aquí te mostramos un ejemplo real de una tabla con datos de personas:</p>
+    <table class="table-auto w-full border-collapse rounded-lg shadow-md">
+      <thead class="bg-blue-200">
+        <tr>
+          <th class="border px-4 py-2 text-left text-blue-600">Nombre</th>
+          <th class="border px-4 py-2 text-left text-blue-600">Edad</th>
+          <th class="border px-4 py-2 text-left text-blue-600">Ciudad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="bg-white hover:bg-gray-50">
+          <td class="border px-4 py-2">Ana</td>
+          <td class="border px-4 py-2">28</td>
+          <td class="border px-4 py-2">Lima</td>
+        </tr>
+        <tr class="bg-white hover:bg-gray-50">
+          <td class="border px-4 py-2">Luis</td>
+          <td class="border px-4 py-2">34</td>
+          <td class="border px-4 py-2">Bogotá</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Consejos de diseño -->
+  <section class="mb-8 bg-white p-6 rounded-lg shadow-lg">
+    <h2 class="text-2xl font-semibold text-blue-600 mb-4">Consejos para mejorar el diseño de tus tablas:</h2>
+    <p class="text-gray-800">El diseño adecuado de una tabla es crucial para que los datos sean legibles. Aquí tienes algunos consejos:</p>
+    <ul class="list-disc pl-6 text-gray-700 mt-2">
+      <li>Asegúrate de que el encabezado sea claro y describa el contenido de las columnas.</li>
+      <li>Usa colores suaves para los encabezados, como el <span class="text-blue-600">bg-blue-200</span>, para resaltar y facilitar la lectura.</li>
+      <li>Considera usar bordes de celdas con un color sutil para mejorar la estructura.</li>
+      <li>Alinea adecuadamente el texto y usa <span class="text-blue-600">nowrap</span> para evitar que el texto largo se divida.</li>
+    </ul>
+  </section>
+
+    <!-- Footer -->
+    <footer class="text-center mt-8">
+    <p class="text-gray-600">¿Quieres volver al inicio?</p>
+    <a href="../index.html" class="inline-block mt-2 px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300 transform hover:scale-105">
+        Volver al Inicio
+    </a>
+    </footer>
+</body>
+</html>

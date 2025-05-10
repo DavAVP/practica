@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formularios en HTML - CodeStart</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-50 text-gray-800 p-10 font-sans">
+
+  <!-- Encabezado -->
+  <header class="text-center mb-12">
+    <h1 class="text-4xl font-extrabold text-indigo-600 mb-4">📝 Formularios en HTML</h1>
+    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Los formularios permiten recolectar información de los usuarios, y son esenciales para interactuar con ellos en una página web.</p>
+  </header>
+
+  <!-- Sección de Introducción -->
+  <section class="mb-12">
+    <h2 class="text-3xl font-semibold text-indigo-600 mb-6">¿Qué es un Formulario en HTML?</h2>
+    <p class="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">Un formulario en HTML es un conjunto de campos y botones que permiten a los usuarios enviar datos a un servidor. Pueden incluir campos de texto, casillas de verificación, botones de radio, y mucho más. Son fundamentales para procesos como registros, comentarios y encuestas.</p>
+  </section>
+
+  <!-- Sección de Ejemplo de Formulario -->
+  <section class="bg-white p-8 rounded-lg shadow-md mb-12">
+    <h2 class="text-3xl font-semibold text-indigo-600 mb-4">Ejemplo de Formulario Básico</h2>
+    <p class="text-lg text-gray-600 mb-6">Aquí tienes un ejemplo básico de cómo construir un formulario en HTML:</p>
+    <pre class="bg-gray-100 p-6 rounded-lg text-gray-800">
+      <code>
+        &lt;form action="/submit_form" method="POST"&gt;
+          &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+          &lt;input type="text" id="nombre" name="nombre" /&gt;
+          
+          &lt;label for="email"&gt;Email:&lt;/label&gt;
+          &lt;input type="email" id="email" name="email" /&gt;
+          
+          &lt;label for="mensaje"&gt;Mensaje:&lt;/label&gt;
+          &lt;textarea id="mensaje" name="mensaje"&gt;&lt;/textarea&gt;
+          
+          &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+        &lt;/form&gt;
+      </code>
+    </pre>
+    <p class="text-lg text-gray-600 mt-6">Este formulario tiene tres campos: nombre, email y mensaje, y un botón para enviarlos al servidor.</p>
+  </section>
+
+  <!-- Sección de Instrucciones -->
+  <section class="mb-12">
+    <h2 class="text-3xl font-semibold text-indigo-600 mb-6">Pasos para Crear un Formulario</h2>
+    <ol class="list-decimal pl-8 text-lg text-gray-700 space-y-4">
+      <li><strong>Crear la etiqueta <code>&lt;form&gt;</code>:</strong> Define un contenedor que agrupe todos los elementos del formulario. Usa el atributo <code>action</code> para definir el destino de los datos y <code>method</code> para definir el tipo de envío.</li>
+      <li><strong>Agregar los campos de entrada:</strong> Utiliza <code>&lt;input&gt;</code> o <code>&lt;textarea&gt;</code> para recibir datos del usuario, como texto o mensajes largos.</li>
+      <li><strong>Añadir el botón de envío:</strong> Con un botón de tipo <code>submit</code>, el formulario se envía al servidor con los datos ingresados.</li>
+      <li><strong>Personalizar y validar:</strong> Asegúrate de aplicar estilos adecuados y validación de datos para mejorar la experiencia del usuario.</li>
+    </ol>
+  </section>
+
+  <!-- Sección de Buenas Prácticas -->
+  <section class="bg-white p-8 rounded-lg shadow-md mb-12">
+    <h2 class="text-3xl font-semibold text-indigo-600 mb-6">Buenas Prácticas en Formularios</h2>
+    <ul class="list-disc pl-8 text-lg text-gray-700 space-y-4">
+      <li><strong>Usa etiquetas <code>&lt;label&gt;</code>:</strong> Las etiquetas de formulario son esenciales para una experiencia accesible.</li>
+      <li><strong>Valida los campos:</strong> Asegúrate de que los datos sean correctos antes de enviarlos. Usa validación HTML y JavaScript.</li>
+      <li><strong>Diseño responsivo:</strong> Asegúrate de que el formulario se vea bien en cualquier dispositivo usando CSS y media queries.</li>
+      <li><strong>Retroalimentación clara:</strong> Proporciona mensajes claros para que los usuarios sepan si se enviaron correctamente los datos o si hubo errores.</li>
+    </ul>
+  </section>
+
+  <!-- Sección del Formulario en Vivo -->
+  <section class="mb-12">
+    <h2 class="text-3xl font-semibold text-indigo-600 mb-6">Formulario de Ejemplo en Vivo</h2>
+    <form class="bg-white p-8 rounded-lg shadow-md space-y-6 max-w-md mx-auto">
+      <div>
+        <label for="nombre" class="block text-lg text-gray-700">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+      </div>
+      <div>
+        <label for="email" class="block text-lg text-gray-700">Email:</label>
+        <input type="email" id="email" name="email" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+      </div>
+      <div>
+        <label for="mensaje" class="block text-lg text-gray-700">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+      </div>
+      <button type="submit" class="w-full py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition duration-300">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Pie de Página -->
+  <footer class="text-center mt-12">
+    <p class="text-lg text-gray-600 mb-4">¿Te gustaría volver al inicio?</p>
+    <a href="../index.html" class="inline-block px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105">Volver al Inicio</a>
+  </footer>
+
+</body>
+</html>
