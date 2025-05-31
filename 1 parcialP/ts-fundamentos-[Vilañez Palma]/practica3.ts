@@ -21,7 +21,7 @@ interface Cliente {
   id: number;
   nombre: string;
   correo: string;
-  vip?: boolean; 
+  vip?: boolean;
 }
 
 interface Pedido {
@@ -31,7 +31,7 @@ interface Pedido {
   fecha: string;
 }
 
-// 3. Clases
+// 3. Clases para organizar funcionalidades del sistema
 class ClienteService {
   constructor(private clientes: Cliente[]) {}
 
@@ -60,7 +60,7 @@ class PedidoService {
   }
 }
 
-// 4. Arreglos con datos
+// 4. Arreglos con datos iniciales
 const productos: Producto[] = [
   { id: 1, nombre: "Mouse", precio: 10, stock: 20, categoria: "Periférico" },
   { id: 2, nombre: "Teclado", precio: 20, stock: 10, categoria: "Periférico" },
@@ -145,9 +145,16 @@ function contarProductosPorCliente(clienteId: number): number {
   return pedidosCliente.reduce((acc, p) => acc + p.productos.length, 0);
 }
 
-// 12. Impresión anidada
-pedidos.forEach(p => {
+// 12. Impresión anidada (igual que tu pana)
+pedidos.forEach((p, i) => {
   const cliente = clientes.find(c => c.id === p.clienteId);
-  console.log(`Pedido #${p.id} de ${cliente?.nombre}:`);
-  p.productos.forEach(prod => console.log(`  - ${prod.nombre}`));
+  console.log(`Elemento ${i + 1}: PedidoTienda {`);
+  console.log(`  cliente: ClienteTienda { nombre: '${cliente?.nombre}', correo: '${cliente?.correo}' },`);
+  console.log(`  productos: [`);
+  p.productos.forEach(prod => {
+    console.log(`    ProductoTienda { nombre: '${prod.nombre}', precio: ${prod.precio}, stock: ${prod.stock}, categoria: '${prod.categoria ?? "N/A"}' },`);
+  });
+  console.log(`  ],`);
+  console.log(`  fecha: '${p.fecha}'`);
+  console.log(`}\n`);
 });
