@@ -5,30 +5,35 @@
     <title>TruequeWeb Práctica 4</title>
     <script type="module" src="/src/main.ts"></script>
     <link rel="stylesheet" href="/src/style.css" />
-    
   </head>
-  <body class="bg-gray-100 p-6 space-y-10">
+  <body>
 
-    <!-- 1. Formulario Categoría -->
-    <form id="form-categoria" class="space-y-4 bg-white p-4 rounded shadow-md w-full max-w-md mx-auto">
-      <h2 class="text-xl font-bold">Registrar Categoría</h2>
-      <input id="nombre" type="text" placeholder="Nombre" class="w-full border p-2 rounded" />
-      <textarea id="descripcion" placeholder="Descripción" class="w-full border p-2 rounded"></textarea>
-      <div id="errores"></div>
-      <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Guardar</button>
-    </form>
+    <main class="container">
 
-    <!-- 2. Ubicaciones -->
-    <section class="my-8 max-w-2xl mx-auto">
-      <h2 class="text-2xl font-bold mb-4">Ubicaciones Registradas</h2>
-      <div id="ubicaciones" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
-    </section>
+      <!-- 1. Formulario Categoría -->
+      <section class="card">
+        <h2>Registrar Categoría</h2>
+        <form id="form-categoria" class="formulario">
+          <input id="nombre" type="text" placeholder="Nombre" />
+          <textarea id="descripcion" placeholder="Descripción"></textarea>
+          <div id="errores"></div>
+          <button type="submit">Guardar</button>
+        </form>
+      </section>
 
-    <!-- 3. Historial de Trueques -->
-    <section class="my-8 max-w-2xl mx-auto">
-      <h2 class="text-2xl font-bold mb-4">Historial de Trueques</h2>
-      <div id="historial" class="space-y-4"></div>
-    </section>
+      <!-- 2. Ubicaciones -->
+      <section class="card">
+        <h2>Ubicaciones Registradas</h2>
+        <div id="ubicaciones" class="grid"></div>
+      </section>
+
+      <!-- 3. Historial de Trueques -->
+      <section class="card">
+        <h2>Historial de Trueques</h2>
+        <div id="historial" class="lista"></div>
+      </section>
+
+    </main>
 
   </body>
 </html>
