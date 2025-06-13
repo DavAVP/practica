@@ -1,0 +1,60 @@
+{
+  "categorias": [
+    {
+      "id": "cat1",
+      "nombre": "Restaurantes",
+      "icono": "🍽️"
+    },
+    {
+      "id": "cat2",
+      "nombre": "Salones",
+      "icono": "✂️"
+    }
+  ],
+  "establecimientos": [
+    {
+      "id": "cafe1",
+      "nombre": "The Cozy Corner Café",
+      "categoriaId": "cat1",
+      "descripcion": "A cozy spot for coffee and pastries...",
+      "direccion": "123 Main Street, Anytown",
+      "telefono": "(555) 123-4567",
+      "horario": ["Mon-Fri: 7am-6pm", "Sat: 8am-4pm"],
+      "calificacion": 4.5,
+      "totalResenas": 234
+    }
+  ],
+  "tickets": [
+    {
+      "id": "tck1",
+      "codigo": "A12",
+      "establecimientoId": "cafe1",
+      "posicionActual": 3,
+      "personasDelante": 2,
+      "estado": "esperando",
+      "tiempoEspera": 15,
+      "horaCreacion": "2023-11-20T10:00:00Z"
+    }
+  ],
+  "notificaciones": [
+    {
+      "id": "not1",
+      "ticketId": "tck1",
+      "mensaje": "Tu turno es en 10 minutos",
+      "tipo": "aproximacion",
+      "leida": false,
+      "timestamp": "2023-11-20T10:05:00Z"
+    }
+  ],
+  "resenas": [
+    {
+      "id": "rev1",
+      "establecimientoId": "cafe1",
+      "usuario": "Sophia Clark",
+      "calificacion": 5,
+      "comentario": "¡El mejor café de la ciudad!",
+      "fecha": "2023-11-15T08:30:00Z",
+      "likes": 12
+    }
+  ]
+}
