@@ -1,8 +1,7 @@
 📌 Proyecto Vue 3: Sistema de Subida de Archivos
 Aplicación sencilla para subir contenido con:
-✅ Vue 3 + TypeScript (Estructura limpia y tipado seguro)
-✅ Vue Toastification (Notificaciones elegantes)
-✅ Vue Loading Overlay (Indicador de carga)
+- Vue Toastification (Notificaciones elegantes)
+- Vue Loading Overlay (Indicador de carga)
 
 --------------------------------------------------------------------------------------
 📂 Estructura del Proyecto
@@ -14,16 +13,14 @@ src/
 │   └── Subida.ts         # Simula la subida de archivos
 ├── paginas/              # Vistas/páginas
 │   └── PaginaSubida.vue  # Formulario principal
-├── App.vue               # Componente raíz
 └── main.ts               # Configuración inicial
 
 --------------------------------------------------------------------------------------
 ⚙️ Configuración Técnica
 1. Dependencias Principales
-Librería---------------Uso
+Librería
 vue-toastification-----Notificaciones estilo Toast
 vue-loading-overlay----Spinner de carga elegante
-TypeScript-------------Tipado estático para Vue 3
 
 2. Instalación
 npm install vue-toastification@next vue-loading-overlay@6.0.0
@@ -57,14 +54,12 @@ export const subidaContenido = async (data: ContenidoFormulario) => {
                 id: Date.now(),
                 fechaSubida: new Date(),
             });
-        }, 2000); // Simula 2 segundos de carga
+        }, 4000); // Simula 4 segundos de carga
     });
 };
 
 3. paginas/PaginaSubida.vue
 Componente principal con:
--Formulario controlado por v-model
--Validación de campos obligatorios
 -Manejo de archivos con <input type="file">
 -Integración de notificaciones y loading overlay
 
@@ -76,16 +71,7 @@ Componente principal con:
     {{ isLoading ? 'Subiendo...' : 'Subir Archivo' }}
 </button>
 
-4. App.vue
-Configuración inicial con mensaje de bienvenida:
-
-<script setup>
-import { useToast } from 'vue-toastification';
-const toast = useToast();
-toast.info("Sistema listo para subir archivos");
-</script>
-
-5. main.ts
+4. main.ts
 Configura plugins globales:
 
 app.use(Toast); // Toastification

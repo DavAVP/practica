@@ -12,7 +12,7 @@ export const subidaContenido = async (data: ContenidoFormulario) => {
                 id: Date.now(),
                 fechaSubida: new Date(),
             })
-        }, 200)
+        }, 400)
     }) 
 }
 
